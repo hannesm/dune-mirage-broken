@@ -1,0 +1,25 @@
+(library
+ (name mirage_ptime_solo5)
+ (public_name mirage-ptime.solo5)
+ (implements mirage-ptime)
+ (foreign_stubs
+  (language c)
+  (names mirage_ptime_stubs)))
+
+(rule
+ (target mirage_ptime_stubs.c)
+ (enabled_if
+  (<> %{context_name} "solo5"))
+ (deps
+  (:src mirage_ptime_stubs.default.c))
+ (action
+  (copy %{src} %{target})))
+
+(rule
+ (target mirage_ptime_stubs.c)
+ (enabled_if
+  (= %{context_name} "solo5"))
+ (deps
+  (:src mirage_ptime_stubs.solo5.c))
+ (action
+  (copy %{src} %{target})))

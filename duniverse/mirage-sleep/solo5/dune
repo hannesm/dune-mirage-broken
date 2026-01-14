@@ -1,0 +1,5 @@
+(library
+ (name mirage_sleep_solo5)
+ (public_name mirage-sleep.solo5)
+ (implements mirage-sleep)
+ (optional))

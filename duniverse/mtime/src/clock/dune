@@ -1,0 +1,10 @@
+(library
+ (name mtime_clock)
+ (public_name mtime.clock)
+ (libraries mtime)
+ (foreign_stubs (language c) (names mtime_clock_stubs))
+ (js_of_ocaml (javascript_files runtime.js)))
+
+(deprecated_library_name
+  (old_public_name mtime.clock.os)
+  (new_public_name mtime.clock))

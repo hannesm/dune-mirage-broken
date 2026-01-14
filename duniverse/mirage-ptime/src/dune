@@ -1,0 +1,6 @@
+(library
+ (name mirage_ptime)
+ (public_name mirage-ptime)
+ (libraries ptime)
+ (virtual_modules mirage_ptime)
+ (default_implementation mirage-ptime.unix))

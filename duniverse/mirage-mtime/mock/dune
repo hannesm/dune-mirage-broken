@@ -1,0 +1,11 @@
+(library
+ (name mirage_mtime_set)
+ (public_name mirage-mtime.set)
+ (modules mirage_mtime_set))
+
+(library
+ (name mirage_mtime_mock)
+ (public_name mirage-mtime.mock)
+ (implements mirage-mtime)
+ (libraries mirage-mtime.set)
+ (modules mirage_mtime))

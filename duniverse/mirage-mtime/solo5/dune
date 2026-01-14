@@ -1,0 +1,4 @@
+(library
+ (name mirage_mtime_solo5)
+ (public_name mirage-mtime.solo5)
+ (implements mirage-mtime))

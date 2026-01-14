@@ -1,0 +1,3 @@
+(library
+ (name mirage_bootvar_parse_argv)
+ (public_name mirage-bootvar.parse-argv))

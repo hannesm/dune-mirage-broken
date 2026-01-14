@@ -1,0 +1,12 @@
+(library
+ (name ptime_clock)
+ (synopsis "Ptime_clock for native OS")
+ (public_name ptime.clock)
+ (libraries ptime)
+ (foreign_stubs (language c) (names ptime_clock_stubs))
+ (flags (:standard -w -6-27))
+ (wrapped false))
+
+(deprecated_library_name
+  (old_public_name ptime.clock.os)
+  (new_public_name ptime.clock))

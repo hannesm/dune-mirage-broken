@@ -1,0 +1,4 @@
+(test
+ (name portable)
+ (package mirage-mtime)
+ (libraries mirage-mtime))

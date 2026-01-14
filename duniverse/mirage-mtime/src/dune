@@ -1,0 +1,5 @@
+(library
+ (name mirage_mtime)
+ (public_name mirage-mtime)
+ (virtual_modules mirage_mtime)
+ (default_implementation mirage-mtime.unix))

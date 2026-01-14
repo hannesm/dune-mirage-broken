@@ -1,0 +1,3 @@
+(test
+  (name min_clock)
+  (libraries mtime mtime.clock))

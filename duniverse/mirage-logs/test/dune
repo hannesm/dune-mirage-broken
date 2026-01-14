@@ -1,0 +1,4 @@
+(test
+ (name test)
+ (libraries alcotest mirage-logs mirage-ptime.mock mirage-ptime.set)
+ (package mirage-logs))
